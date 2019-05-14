@@ -146,6 +146,12 @@ CREATE TABLE `prodi` (
 -- Dumping data for table `prodi`
 --
 
+INSERT INTO `prodi` (`id`, `nama`) VALUES
+(5, 'Kedokteran'),
+(6, 'Perawat'),
+(7, 'Teknik Elektro'),
+(8, 'Sistem Informasi'),
+(9, 'Teknik Pertambangan');
 
 -- --------------------------------------------------------
 
@@ -168,7 +174,17 @@ CREATE TABLE `siswa` (
   `nilai_bahasa_indonesia` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `siswa`
+--
 
+INSERT INTO `siswa` (`id`, `nama`, `jurusan`, `minat`, `ekonomi`, `nilai_matematika`, `nilai_fisika`, `nilai_kimia`, `nilai_biologi`, `nilai_tik`, `nilai_bahasa_inggris`, `nilai_bahasa_indonesia`) VALUES
+(2, 'Anjuang Dari', 0, 1, 1, 78, 80, 75, 80, 90, 85, 85),
+(3, 'Hilman Tristian', 0, 1, 2, 0, 100, 100, 100, 100, 0, 0),
+(5, 'Bujang Mantap', 1, 2, 0, 65, 10, 10, 20, 10, 12, 15),
+(7, 'Khatami Husaini M.', 0, 0, 0, 0, 80, 80, 80, 80, 0, 0),
+(8, 'Norman Syarif', 0, 1, 2, 0, 85, 70, 10, 100, 0, 0),
+(9, 'Aisyah', 3, 0, 0, 65, 75, 75, 75, 90, 65, 75);
 
 --
 -- Indexes for dumped tables
